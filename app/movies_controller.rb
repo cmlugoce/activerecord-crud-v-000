@@ -26,7 +26,14 @@ end
 
 def can_be_created_in_a_block(args ={title: "Black Panther", release_date:"2018"} )
   Movie.create do |m|
-   __
+  m.title = args[:title]
+    m.release_date = args[:release_date]
+    m.director = args[:director]
+    m.lead = args[:lead]
+    m.in_theaters = args[:in_theaters]
+    m.save
+    m
+    end
   end
 end
 
