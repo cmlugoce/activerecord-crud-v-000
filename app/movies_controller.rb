@@ -31,7 +31,6 @@ def can_be_created_in_a_block(args ={title: "Black Panther", release_date:"2018"
     m.director = args[:director]
     m.lead = args[:lead]
     m.in_theaters = args[:in_theaters]
-   # m.synopsis = args[:synopsis]
     m.save
     m
     end
